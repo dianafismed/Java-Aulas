@@ -19,19 +19,23 @@ public class For {
     for (int x=0; x<alunos.length; x++) {
       System.out.println("O aluno no indice x=" + x + " é " + alunos[x]);
     }
-    // forma abreviada / ternária
+    // forma abreviada - For Each
     for(String aluno : alunos) {
-      System.out.println(alunos);
+      System.out.println("Nome do aluno é: " + aluno);
     }
 
+    // Break
+    for(int numero = 1; numero <=5; numero ++){
+      if(numero==3)
+        break;
+      System.out.println(numero);
+    }
 
-
-
-
-
-
-
-
-
+    // Continue
+    for(int numero = 1; numero <=5; numero ++){
+      if(numero==3)
+        continue;
+      System.out.println(numero);
+    }
 	}
 }
