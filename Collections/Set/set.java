@@ -72,7 +72,7 @@ public class set {
   System.out.println(notas + " \n\n");
 
   System.out.println("Remova a nota da posição 0");
-  System.out.println("Novament, como a lista é aleatória, não é possível encontrar a posição de um elemento \n\n");
+  System.out.println("Novamente, como a lista é aleatória, não é possível encontrar a posição de um elemento \n\n");
   
   System.out.println("Remova as notas menores que 7 e exiba a lista: ");
   Iterator<Double> iterator1 = notas.iterator();
