@@ -64,9 +64,9 @@ public class streamApi {
       .collect(Collectors.toList())
       .forEach(System.out::println);
     // Colocando dentro de uma variável
-    List<Integer> numerosAleatorios1 = numerosAleatorios.stream()
-      .map(Integer::parseInt)
-      .collect(Collectors.toList());
+    //List<Integer> numerosAleatorios1 = numerosAleatorios.stream()
+    //  .map(Integer::parseInt)
+    //  .collect(Collectors.toList());
     
     List<Integer> numerosAleatoriosInteger = numerosAleatorios.stream()
       .map(Integer::parseInt)

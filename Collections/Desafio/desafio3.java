@@ -11,9 +11,10 @@ import java.util.Scanner;
 
 public class desafio3 {
   public static void main(String[] args) {
-    Scanner leitor = new Scanner(System.in);
+    try (Scanner leitor = new Scanner(System.in)) {
+    }
     //int t = leitor.nextInt();
-    int N[] = {};
+    //int N[] = {};
     Integer t = 3;
     
     Integer i = 0;

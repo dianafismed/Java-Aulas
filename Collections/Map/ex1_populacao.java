@@ -35,7 +35,7 @@ public class ex1_populacao {
 
 
     System.out.println("Confira se o estado da Paraíba (PB) está no dicionário, caso não, adicione PB - 4.039.277: ");
-    if(estados.containsValue("PB")) System.out.println("Contém");
+    if(estados.containsKey("PB")) System.out.println("Contém");
     else estados.put("PB", 4039277); System.out.println("Não contém - Adicionando");
     System.out.println(estados + "\n\n");
 

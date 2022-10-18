@@ -14,19 +14,20 @@ import java.util.Scanner;
 
 public class desafio2 {
   public static void main(String[] args) {
-    Scanner leitor = new Scanner(System.in);
-    List<Produto> produtos = new ArrayList<>();
-    Double total = 0d;
-    
-    for(int i=0; i<2; i++){
-      int cod = leitor.nextInt();
-      int n = leitor.nextInt();
-      double valor = leitor.nextDouble();
-      produtos.add(new Produto(cod, n, valor));
-      total +=(n*valor);
-    }
-    //System.out.println(produtos);
-    System.out.println(String.format("VALOR A PAGAR: R$ %.2f", total)); 
+    try (Scanner leitor = new Scanner(System.in)) {
+      List<Produto> produtos = new ArrayList<>();
+      Double total = 0d;
+      
+      for(int i=0; i<2; i++){
+        int cod = leitor.nextInt();
+        int n = leitor.nextInt();
+        double valor = leitor.nextDouble();
+        produtos.add(new Produto(cod, n, valor));
+        total +=(n*valor);
+      }
+      //System.out.println(produtos);
+      System.out.println(String.format("VALOR A PAGAR: R$ %.2f", total));
+    } 
   }
 }
 
